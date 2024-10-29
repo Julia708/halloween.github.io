@@ -1,0 +1,77 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(72, 44, 175);
+}
+
+@font-face {
+    font-family: "konstantine";
+    src: url("fonte/KONSTANTINE.ttf");
+}
+
+#cabecalho {
+    background-color: rgb(72, 44, 175);
+    display: flex;
+    width: auto;
+    height:110px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 125px;
+    height: auto; 
+    background-image: radial-gradient(rgba(255, 255, 255, 0.507) 40%, rgba(255, 255, 255, 0) 70%);
+}
+
+#menu {
+    background-color: rgb(97, 74, 179);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    height: 70px;
+    list-style: none;
+    font-family: "konstantine";
+    font-size: 35px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: rgb(129, 17, 9);
+
+}
+
+#conteudo {
+    display: flex;
+    background-image: url("img/background.png");
+    background-size: 500px 500px;
+    height: 550px;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(214, 55, 7);
+    font-family: "konstantine";
+}
+
+#imageHome {
+    border-radius: 30px;
+    border: 5px rgb(79, 28, 99) solid;
+}
+
+
+#rodape {
+    background-color: rgb(72, 44, 175);
+    padding: 30px;
+    width: auto;
+    height: 150px;
+    color: white;
+    text-align: center;
+}
+
+#rodape img {
+    margin: 10px;
+}
+
