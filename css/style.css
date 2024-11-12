@@ -77,7 +77,13 @@ body {
 }
 
 #galeria {
-    display: ;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    align-content: center;
+    padding: 30px;
+    align-items: center;
+    justify-items: center;
     background-image: url("img/background.png");
     background-size: 250px 250px;
     height: auto;
