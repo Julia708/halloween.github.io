@@ -12,7 +12,7 @@ body {
 }
 
 @font-face {
-    font-family:"font";
+    font-family: "font";
     src: url(fonte/Halloweendy.otf);
 }
 
@@ -20,7 +20,7 @@ body {
     background-color: rgb(46, 27, 116);
     display: flex;
     width: auto;
-    height:130px;
+    height: 130px;
     padding: 30px;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@ body {
 
 #logo {
     width: 125px;
-    height: auto; 
+    height: auto;
     background-image: radial-gradient(rgba(255, 255, 255, 0.353) 40%, rgba(255, 255, 255, 0) 70%);
 }
 
@@ -56,7 +56,7 @@ body {
     background-size: 250px 250px;
     height: 520px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     color: rgb(228, 110, 0);
     font-family: "konstantine";
 }
@@ -76,6 +76,20 @@ body {
     color: aqua;
 }
 
+#galeria {
+    display: ;
+    background-image: url("img/background.png");
+    background-size: 250px 250px;
+    height: auto;
+        
+}
+
+#foto {
+    width: 350px;
+    height: auto;
+    border-radius: 30px;
+    border: 5px rgb(161, 9, 9) solid;
+}
 
 #rodape {
     background-color: rgb(46, 27, 116);
@@ -90,4 +104,3 @@ body {
 #rodape img {
     margin: 10px;
 }
-
