@@ -33,21 +33,40 @@ body {
 }
 
 #menu {
+    display: block;
     background-color: rgb(69, 48, 142);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     width: auto;
-    height: 70px;
     list-style: none;
     font-family: "konstantine";
     font-size: 35px;
+    padding: 5px;
+    list-style: none;
+}
+
+#menu li {
+    display: flex;
+    background-color: rgb(28, 10, 80);
+    border: 3px rgb(100, 24, 24) solid;
+    width: 95%;
+    padding: 10px 20px 10px 20px;
+    height: fit-content;
+    justify-content: center;
+    margin: 8px;
 }
 
 #menu a {
     text-decoration: none;
     color: rgb(129, 17, 9);
 
+}
+
+#burger {
+    display: block;
+    background-color:  rgb(55, 37, 119);;
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    color:rgb(0, 0, 0);
 }
 
 #conteudo {
@@ -78,7 +97,7 @@ body {
 
 #galeria {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 30px;
     align-content: center;
     padding: 30px;
