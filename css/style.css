@@ -33,7 +33,7 @@ body {
 }
 
 #menu {
-    display: block;
+    display: none;
     background-color: rgb(69, 48, 142);
     width: auto;
     list-style: none;
@@ -47,7 +47,8 @@ body {
     display: flex;
     background-color: rgb(28, 10, 80);
     border: 3px rgb(100, 24, 24) solid;
-    width: 95%;
+    border-radius: 10px;
+    width: 99%;
     padding: 10px 20px 10px 20px;
     height: fit-content;
     justify-content: center;
@@ -62,18 +63,18 @@ body {
 
 #burger {
     display: block;
-    background-color:  rgb(55, 37, 119);;
+    background-color: rgb(55, 37, 119);
     width: 100%;
     height: fit-content;
     padding: 15px;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 #conteudo {
     display: flex;
     background-image: url("img/background.png");
     background-size: 250px 250px;
-    height: 520px;
+    height: 550px;
     align-items: center;
     justify-content: space-around;
     color: rgb(228, 110, 0);
@@ -106,7 +107,7 @@ body {
     background-image: url("img/background.png");
     background-size: 250px 250px;
     height: auto;
-        
+
 }
 
 #foto {
@@ -118,7 +119,7 @@ body {
 
 #rodape {
     background-color: rgb(46, 27, 116);
-    padding: 30px;
+    padding: 25px;
     width: auto;
     height: 120px;
     color: rgb(107, 13, 6);
@@ -126,6 +127,70 @@ body {
     font-family: "font";
 }
 
+#contato {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30px 30px 30px 30px 30px 150px 30px 60px;
+    row-gap: 10px;
+    background-image: url("img/background.png");
+    background-size: 250px 250px;
+    height: 800px;
+    font-family: "font";
+    color: rgb(138, 224, 57);
+    padding: 30px;
+}
+#contato iframe {
+    grid-column: 2;
+    grid-row: auto;
+    justify-self: center;
+}
+#contato label {
+    margin: 5px;
+    grid-column: 1;
+    align-self: center;
+}
+
+#contato input {
+    margin: 5px;
+    grid-column: 1;
+}
+
+#contato textarea {
+    margin: 5px;
+    grid-column: 1;
+}
+
+
+
+#enviar {
+    width: 100px;
+    height: 30px;
+}
+
 #rodape img {
-    margin: 10px;
+    margin: 9px;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+    #menu {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    #menu {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 767px) {
+    #burger {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        width: auto;
+        justify-content: space-around;
+    }
 }

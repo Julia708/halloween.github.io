@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <div id="cabecalho">
         <img id="logo" src="css/img/ceifador.png" href="logo">
     </div>
@@ -39,6 +39,13 @@
     </div>
 
     <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 767){
+                menu.style.display = 'flex'
+            }else{
+                menu.style.display ='none'
+            }
+        }
         function clickMenu(){
             if(menu.style.display == 'block'){
                 menu.style.display = 'none'
