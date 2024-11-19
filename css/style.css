@@ -134,16 +134,13 @@ body {
     row-gap: 10px;
     background-image: url("img/background.png");
     background-size: 250px 250px;
-    height: 800px;
-    font-family: "font";
-    color: rgb(138, 224, 57);
+    width: 100%;
+    height: fit-content;
+    font-family: "Dream";
+    color: rgb(59, 112, 156);
     padding: 30px;
 }
-#contato iframe {
-    grid-column: 2;
-    grid-row: auto;
-    justify-self: center;
-}
+
 #contato label {
     margin: 5px;
     grid-column: 1;
@@ -158,6 +155,12 @@ body {
 #contato textarea {
     margin: 5px;
     grid-column: 1;
+}
+
+#contato iframe {
+    grid-column: 2;
+    grid-row: 1 / 6;
+    justify-self: center;
 }
 
 
