@@ -81,19 +81,44 @@ body {
     font-family: "konstantine";
 }
 
+#conteudo h1 {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    padding: 20px;
+}
+
 #imageHome {
     border-radius: 30px;
     border: 5px rgb(224, 108, 0) solid;
 }
 
+#imageSobre {
+    grid-columns: 1;
+    justify-self: center;
+    border-radius: 30px;
+    border: 5px rgb(224, 108, 0) solid;
+}
+
 #sobre {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     background-image: url("img/background.png");
     background-size: 250px 250px;
     height: 520px;
     align-items: center;
     justify-content: space-around;
-    color: aqua;
+    color: rgb(125, 224, 80);
+    font-family: "font";
+    padding: 30px;
+    
+}
+
+#sobre h1 {
+    grid-column: 2;
+    background-color: rgba(0, 0, 0, 0.788);
+    border-radius: 15px;
+    padding: 20px; 
+    font-size: 30px;
 }
 
 #galeria {
@@ -136,8 +161,8 @@ body {
     background-size: 250px 250px;
     width: 100%;
     height: fit-content;
-    font-family: "Dream";
-    color: rgb(59, 112, 156);
+    font-family: "font";
+    color: rgb(125, 224, 80);
     padding: 30px;
 }
 
@@ -162,8 +187,6 @@ body {
     grid-row: 1 / 6;
     justify-self: center;
 }
-
-
 
 #enviar {
     width: 100px;
